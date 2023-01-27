@@ -1,12 +1,12 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import Logo from './logo';
-import classes from './main-navigation.module.css';
+import Logo from "./logo";
+import classes from "./main-navigation.module.css";
 
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <Link href='/'>
+      <Link href="/">
         <a>
           <Logo />
         </a>
@@ -14,11 +14,11 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/posts'>Posts</Link>
+            <Link href="/events">See All Events</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/contact'>Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
